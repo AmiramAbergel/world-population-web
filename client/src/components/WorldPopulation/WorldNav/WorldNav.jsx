@@ -1,11 +1,18 @@
+/** @jsxImportSource @emotion/react */
+
+import Button from '../../UI/Button/Button.jsx';
+import { continentsContainer, continentsNavList } from './WorldNav.style.js';
+
 const DUMMY_CONTINENTS = ['Africa', 'Europe', 'Asia'];
 
 const WorldNav = () => {
   return (
-    <nav>
-      <ul>
+    <nav css={continentsContainer}>
+      <ul css={continentsNavList}>
         {DUMMY_CONTINENTS.map((continent, i) => (
-          <li key={i}>{continent}</li>
+          <li key={i}>
+            <Button title={continent}></Button>
+          </li>
         ))}
       </ul>
     </nav>

@@ -1,11 +1,14 @@
+/** @jsxImportSource @emotion/react */
+
 import Footer from './Footer/Footer.jsx';
 import Header from './Header/Header.jsx';
+import { mainContainer } from './Layout.style.js';
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main css={mainContainer}>{children}</main>
       <Footer />
     </>
   );
