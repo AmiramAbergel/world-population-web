@@ -3,7 +3,15 @@
 import Button from '../../UI/Button/Button.jsx';
 import { continentsContainer, continentsNavList } from './WorldNav.style.js';
 
-const DUMMY_CONTINENTS = ['Africa', 'Europe', 'Asia'];
+const DUMMY_CONTINENTS = [
+  'Africa',
+  'Europe',
+  'Asia',
+  'North America',
+  'South America',
+  'Oceania',
+  'Antartica',
+];
 
 const WorldNav = () => {
   return (
